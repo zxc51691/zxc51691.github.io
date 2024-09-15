@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+main{
+    margin: 3em auto;
+    max-width: 56em;
+}
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+}
+.thumbnails > div {
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  margin: 10px;
+  flex: 1 1 200px;
+}
