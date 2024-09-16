@@ -80,6 +80,16 @@
           font-size: 1.5rem;
         }
 
+        /* Align the centered block with the middle column */
+        .centered-align {
+          display: flex;
+          justify-content: center;
+        }
+
+        .centered-align .centered-block {
+          width: 30%; 
+        }
+
     </style>
 </head>
 <body>
@@ -141,8 +151,8 @@
     </div>
 
     <!-- Centered block -->
-    <div class="block-container">
-        <div class="block centered-block">
+    <div class="centered-align">
+        <div class="centered-block">
             <h3>Block 10</h3>
             <p>Final centered block text.</p>
         </div>
