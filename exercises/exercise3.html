@@ -49,49 +49,50 @@
 
         .block {
           width: 30%;
-          padding-bottom: 30%; 
+          padding-bottom: 30%;
           background-color: #f2f2f2;
           text-align: center;
           display: flex;
           align-items: center;
           justify-content: center;
+          flex-direction: column; /* Allows vertical stacking of text */
           font-size: 1.5rem;
         }
 
         .block1 {
-          background-color: #ff9999;
+          background-color: #034078;
         }
 
         .block2 {
-          background-color: #99ccff;
+          background-color: #034078;
         }
 
         .block3 {
-          background-color: #99ff99;
+          background-color: #034078;
         }
 
         .block4 {
-          background-color: #ffcc99;
+          background-color: #034078;
         }
 
         .block5 {
-          background-color: #cc99ff;
+          background-color: #034078;
         }
 
         .block6 {
-          background-color: #ffff99;
+          background-color: #034078;
         }
 
         .block7 {
-          background-color: #99ffc7;
+          background-color: #034078;
         }
 
         .block8 {
-          background-color: #ff99ee;
+          background-color: #034078;
         }
 
         .block9 {
-          background-color: #99ddff;
+          background-color: #034078;
         }
         
         .centered-block-container {
@@ -103,8 +104,8 @@
         .centered-block {
           width: 30%; 
           padding-bottom: 30%; 
-          background-color: #ff6666;
-          text-align: center;
+          background-color: #034078;
+          text-align: left;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -123,28 +124,60 @@
         <a href="#about">About</a>
     </div>
 
-    
+    <!-- First row of blocks (three side-by-side) -->
     <div class="block-container">
-        <div class="block block1">Block 1</div>
-        <div class="block block2">Block 2</div>
-        <div class="block block3">Block 3</div>
+        <div class="block block1">
+            <h3>Block 1</h3>
+            <p>This is some content for Block 1.</p>
+        </div>
+        <div class="block block2">
+            <h3>Block 2</h3>
+            <p>Some unique text for Block 2.</p>
+        </div>
+        <div class="block block3">
+            <h3>Block 3</h3>
+            <p>Information in Block 3.</p>
+        </div>
     </div>
 
-    
+    <!-- Second row of blocks (three side-by-side) -->
     <div class="block-container">
-        <div class="block block4">Block 4</div>
-        <div class="block block5">Block 5</div>
-        <div class="block block6">Block 6</div>
+        <div class="block block4">
+            <h3>Block 4</h3>
+            <p>Different content for Block 4.</p>
+        </div>
+        <div class="block block5">
+            <h3>Block 5</h3>
+            <p>This is Block 5's content.</p>
+        </div>
+        <div class="block block6">
+            <h3>Block 6</h3>
+            <p>Details in Block 6.</p>
+        </div>
     </div>
 
+    <!-- Third row of blocks (three side-by-side) -->
     <div class="block-container">
-        <div class="block block7">Block 7</div>
-        <div class="block block8">Block 8</div>
-        <div class="block block9">Block 9</div>
+        <div class="block block7">
+            <h3>Block 7</h3>
+            <p>Block 7 content goes here.</p>
+        </div>
+        <div class="block block8">
+            <h3>Block 8</h3>
+            <p>Text for Block 8.</p>
+        </div>
+        <div class="block block9">
+            <h3>Block 9</h3>
+            <p>Content for Block 9.</p>
+        </div>
     </div>
-    
+
+    <!-- Centered block -->
     <div class="centered-block-container">
-        <div class="centered-block">Block 10</div>
+        <div class="centered-block">
+            <h3>Block 10</h3>
+            <p>Final centered block text.</p>
+        </div>
     </div>
 
 </body>
