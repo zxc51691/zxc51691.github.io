@@ -35,24 +35,30 @@ h1 {
 .block-container {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    gap: 2%;
-    flex-wrap: wrap;
+    margin: 2% 5%;
 }
 
-.block, .centered-block {
-    width: 30%;
-    padding-bottom: 30%;
-    background-color: #034078;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 1.5rem;
+.column {
+    width: 48%;
 }
 
-.centered-block {
-    margin: 20px auto;
+.block {
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    margin-bottom: 4%;
+    padding: 5%;
+}
+
+.block h2 {
+    margin-top: 0;
+}
+
+.block img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.block p {
+    margin-bottom: 0;
 }
