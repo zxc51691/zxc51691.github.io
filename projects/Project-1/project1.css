@@ -46,20 +46,26 @@ h1 {
     width: 48%;
 }
 
-.column:first-child .block:nth-child(even) {
-    background-color: #CF6C42;
-    color: #0A0908;
-}
-
+.column:first-child .block:nth-child(even),
 .column:last-child .block:nth-child(odd) {
     background-color: #CF6C42;
     color: #0A0908;
 }
 
+.column:first-child .block:nth-child(even) a,
+.column:last-child .block:nth-child(odd) a {
+    color: #631625;
+}
+
+.column:first-child .block:not(:nth-child(even)) a,
+.column:last-child .block:nth-child(even) a {
+    color: #CF6C42;
+}
+
 .block {
     background-color: #631625;
     border-radius: 15px;
-    margin-bottom: 4%;
+    margin-bottom: 0; /* Remove bottom margin for blocks */
     padding: 5%;
     color: #FFFFFF;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -82,9 +88,14 @@ h1 {
 
 .block a {
     color: #ff3131;
-    text-decoration: none;
 }
 
 .block a:hover {
     text-decoration: underline;
+}
+
+.divider {
+    height: 2px; /* Adjust height as needed */
+    background-color: #FFFFFF; /* Same color as the topnav */
+    margin: 0; /* Adjust margin as needed */
 }
