@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:wght@400&display=swap');
 
 body {
     margin: 0;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', Arial, sans-serif; 
+    font-size: 18px; /* Larger body text */
     background-color: #0A0908; 
 }
 
 h1 {
     text-align: center;
     color: #FFFFFF;
+    font-family: 'Anton', Arial, sans-serif; 
+    font-size: 2.8em; 
 }
 
 .topnav {
@@ -16,7 +19,7 @@ h1 {
     background-color: #FFFFFF;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .topnav a {
@@ -24,8 +27,9 @@ h1 {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
-    flex: 1 1 auto; 
+    font-size: 20px; 
+    font-family: 'Anton', Arial, sans-serif; 
+    flex: 1 1 auto;
 }
 
 .topnav a:hover {
@@ -53,11 +57,11 @@ h1 {
 
 @media (max-width: 768px) {
     .column {
-        width: 100%; 
+        width: 100%;
     }
 
     .block {
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
     }
 }
 
@@ -73,16 +77,16 @@ h1 {
     margin-bottom: 15%;
     padding: 5%;
     color: #FFFFFF;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
     height: 550px;
 }
 
 .block h2 {
     margin-top: 0;
-    font-weight: 700;
+    font-family: 'Anton', Arial, sans-serif;
+    font-size: 1.8em;
 }
 
 .block img {
@@ -95,6 +99,8 @@ h1 {
 .block p {
     margin-bottom: 0px;
     flex-grow: 1;
+    font-family: 'Roboto Condensed', Arial, sans-serif; 
+    font-size: 1.2em; 
     overflow-y: auto;
 }
 
