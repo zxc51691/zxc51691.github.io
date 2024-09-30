@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@700&family=Roboto+Condensed:wght@400&display=swap');
 
 body {
     margin: 0;
@@ -10,7 +10,7 @@ body {
 h1 {
     text-align: center;
     color: #FFFFFF;
-    font-family: 'Anton', Arial, sans-serif; 
+    font-family: 'Poppins', Arial, sans-serif; 
     font-size: 2.8em; 
 }
 
@@ -28,7 +28,7 @@ h1 {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px; 
-    font-family: 'Anton', Arial, sans-serif; 
+    font-family: 'Poppins', Arial, sans-serif; 
     flex: 1 1 auto;
 }
 
@@ -70,7 +70,7 @@ h1 {
 
 .block h2 {
     margin-top: 0;
-    font-family: 'Anton', Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     font-size: 1.8em;
 }
 
@@ -126,7 +126,7 @@ footer ul {
 
 footer ul li {
     color: #0A0908;
-    font-family: 'Anton', Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     font-size: 20px;
     text-align: left;
 }
