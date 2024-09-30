@@ -5,6 +5,7 @@ body {
     font-family: 'Roboto Condensed', Arial, sans-serif; 
     font-size: 18px;
     background-color: #0A0908; 
+    color: #FFFFFF;
 }
 
 h1 {
@@ -38,7 +39,7 @@ h1 {
 }
 
 .topnav a.active {
-    background-color: #631625;
+    background-color: #CF6C42;
     color: white;
 }
 
@@ -63,9 +64,8 @@ h1 {
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: auto;
-    min-height: 500px;
+    justify-content: flex-start;
+    height: 700px; 
 }
 
 .block h2 {
@@ -85,29 +85,30 @@ h1 {
 
 .block p {
     margin-bottom: 15px;
-    flex-grow: 1;
     font-family: 'Roboto Condensed', Arial, sans-serif; 
     font-size: 1.2em; 
     overflow-y: auto;
 }
 
+.block-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 .block a {
-    color: inherit;
+    color: #CF6C42;
     text-decoration: none;
     font-weight: bold;
-    margin-top: auto;
     font-style: italic;
     display: inline-block;
+    margin-top: auto;
+    padding-top: 20px;
+    font-size: 1.8em;
 }
 
 .block a:hover {
     text-decoration: underline;
-}
-
-.column:first-child .block:nth-child(even),
-.column:last-child .block:nth-child(odd) {
-    background-color: #CF6C42;
-    color: #0A0908;
 }
 
 .topnav + .block-container {
@@ -133,13 +134,13 @@ footer ul li {
 
 @media (max-width: 1200px) {
     .block {
-        min-height: 550px;
+        height: 850px;
     }
 }
 
 @media (max-width: 992px) {
     .block {
-        min-height: 600px;
+        height: 900px;
     }
 }
 
@@ -150,7 +151,8 @@ footer ul li {
 
     .block {
         margin-bottom: 20px;
-        min-height: auto;
+        height: auto;
+        min-height: 600px;
     }
 
     .block img {
@@ -174,5 +176,9 @@ footer ul li {
 
     .block p {
         font-size: 1em;
+    }
+
+    .block a {
+        font-size: 1.1em;
     }
 }
