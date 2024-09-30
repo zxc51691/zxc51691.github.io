@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:wght@400&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', Arial, sans-serif; 
+    font-size: 18px;
+    background-color: #0A0908; 
+}
+
+h1 {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Anton', Arial, sans-serif; 
+    font-size: 2.8em; 
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.topnav a {
+    color: #0A0908;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px; 
+    font-family: 'Anton', Arial, sans-serif; 
+    flex: 1 1 auto;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #631625;
+    color: white;
+}
+
+.block-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2% 5%;
+}
+
+.column {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.block {
+    background-color: #631625;
+    border-radius: 15px;
+    margin-bottom: 15%;
+    padding: 5%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    min-height: 500px;
+}
+
+.block h2 {
+    margin-top: 0;
+    font-family: 'Anton', Arial, sans-serif;
+    font-size: 1.8em;
+}
+
+.block img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.block p {
+    margin-bottom: 15px;
+    flex-grow: 1;
+    font-family: 'Roboto Condensed', Arial, sans-serif; 
+    font-size: 1.2em; 
+    overflow-y: auto;
+}
+
+.block a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto;
+    font-style: italic;
+    display: inline-block;
+}
+
+.block a:hover {
+    text-decoration: underline;
+}
+
+.column:first-child .block:nth-child(even),
+.column:last-child .block:nth-child(odd) {
+    background-color: #CF6C42;
+    color: #0A0908;
+}
+
+.topnav + .block-container {
+    margin-top: 4%;
+}
+
+footer {
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    color: #0A0908;
+    font-family: 'Anton', Arial, sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+@media (max-width: 1200px) {
+    .block {
+        min-height: 550px;
+    }
+}
+
+@media (max-width: 992px) {
+    .block {
+        min-height: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .column {
+        width: 100%;
+    }
+
+    .block {
+        margin-bottom: 20px;
+        min-height: auto;
+    }
+
+    .block img {
+        max-height: 300px;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    .block h2 {
+        font-size: 1.5em;
+    }
+
+    .block p {
+        font-size: 1em;
+    }
+}
