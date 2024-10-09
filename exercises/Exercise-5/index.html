@@ -4,35 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Design Example</title>
+    <title>Top Navigation with Dropdown</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Responsive Web Page</h1>
         <nav>
-            <ul>
+            <ul class="nav-left">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li class="dropdown">
+                    <a href="#">Steps <span class="triangle">&#9660;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Step 1</a></li>
+                        <li><a href="#">Step 2</a></li>
+                        <li><a href="#">Step 3</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
-
-    <main>
-        <section class="content">
-            <h2>Welcome to Responsive Design</h2>
-            <p>This is an example of a responsive webpage. Resize the window to see how the layout changes.</p>
-        </section>
-
-        <section class="gallery">
-            <div class="gallery-item">Item 1</div>
-            <div class="gallery-item">Item 2</div>
-            <div class="gallery-item">Item 3</div>
-            <div class="gallery-item">Item 4</div>
-        </section>
-    </main>
 
     <script src="script.js"></script>
 </body>

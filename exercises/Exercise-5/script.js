@@ -1,4 +1,1 @@
-// Example JavaScript for interactive features (optional)
-document.addEventListener('DOMContentLoaded', function () {
-    console.log("Responsive design example loaded");
-});
+console.log("Dropdown navigation with triangle effect loaded");
