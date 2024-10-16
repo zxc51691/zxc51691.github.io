@@ -223,6 +223,7 @@ body {
 @media screen and (max-width: 767px) {
     .navigation {
         padding: 0.4rem;
+        justify-content: space-between;
     }
 
     .nav-item, .begin-button, .dropbtn {
@@ -231,23 +232,28 @@ body {
     }
 
     .home-logo-img {
-        height: 28px;
+        height: 35px;
+    }
+
+    .nav-center {
+        order: 2;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0.5rem 0;
     }
 
     .dropdown {
-        position: static;
-        width: 100%;
-        order: 4;
-        margin-top: 0.5rem;
-    }
-
-    .dropbtn {
-        width: 100%;
-        text-align: left;
+        order: 1;
     }
 
     .dropdown-content {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
+        height: 100%;
+        overflow-y: auto;
     }
     
     .dropdown-content a {
@@ -289,6 +295,7 @@ body {
     }
 
     .dropdown-content {
+        position: absolute;
         left: auto;
         right: 0;
         width: 280px;
