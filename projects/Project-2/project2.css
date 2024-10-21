@@ -11,7 +11,6 @@ body {
     font-size: 16px;
 }
 
-/* Base styles (mobile-first approach) */
 .page-wrapper {
     min-height: 100vh;
     display: flex;
@@ -53,7 +52,7 @@ body {
     margin: 0 auto;
 }
 
-.begin-button, .dropbtn {
+.begin-button, .dropbtn, .nav-button {
     background-color: #0E4463;
     color: white;
     text-decoration: none;
@@ -69,20 +68,9 @@ body {
     gap: 1rem;
 }
 
-.nav-button {
-    background-color: #0E4463;
-    color: white;
-    text-decoration: none;
-    padding: 0.4rem 0.6rem;
-    border-radius: 25px;
-    font-weight: bold;
-    font-size: 0.9rem;
-    white-space: nowrap;
-}
-
 .dropdown {
     order: 3;
-    position: static;
+    position: relative;
     display: inline-block;
     width: auto;
     margin-top: 0;
@@ -105,22 +93,21 @@ body {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
     right: 0;
     background-color: #D61A47;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1000;
+    min-width: 200px;
     max-height: calc(100vh - 100%);
     overflow-y: auto;
-    width: 100%;
 }
 
 .dropdown-content a {
     color: white;
-    padding: 15px 16px;
+    padding: 12px 16px;
     text-decoration: none;
     display: block;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
 
 .dropdown-content a:hover {
@@ -129,6 +116,7 @@ body {
 
 .dropdown.open .dropdown-content {
     display: block;
+    height: calc(100vh - 60px); /* Adjust 60px based on your navigation height */
 }
 
 .dropdown.open .dropdown-icon {
@@ -139,13 +127,14 @@ body {
     flex: 1;
     background-color: #9CEDFF;
     display: flex;
-    padding: 1rem;
+    padding: 0;
     justify-content: center;
 }
 
 .main-content {
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
+    padding: 0;
 }
 
 .home-content {
@@ -180,13 +169,28 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.step-title {
-    color: #cc0000;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+#homeimage {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+.intro-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.intro-box p {
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.4;
 }
 
 .horizontal-line {
@@ -210,7 +214,7 @@ body {
 .step-body-text {
     font-family: 'Quicksand', sans-serif;
     color: #333;
-    font-size: 1.8rem;  /* Increased from 1rem */
+    font-size: 1.25rem;
     line-height: 1.6;
     text-align: left;
     padding: 0 1rem;
@@ -228,7 +232,15 @@ body {
     background-color: #0E4463;
 }
 
-/* Desktop styles */
+.full-width-image {
+    width: 100vw;
+    max-width: none;
+    height: auto;
+    object-fit: cover;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+}
+
 @media screen and (min-width: 768px) {
     body {
         font-size: 18px;
@@ -256,16 +268,12 @@ body {
         margin: 0;
     }
 
-    .dropdown {
-        position: relative;
-        width: auto;
-        margin-top: 0;
+    .dropdown-content {
+        min-width: 250px;
     }
 
-    .dropdown-content {
-        left: auto;
-        right: 0;
-        width: 280px;
+    .dropdown.open .dropdown-content {
+        height: calc(100vh - 80px); /* Adjust 80px based on your desktop navigation height */
     }
 
     .home-header h1 {
@@ -281,16 +289,6 @@ body {
         margin-bottom: 2rem;
     }
 
-    .step-title {
-        font-size: 3rem;
-        margin-top: 1.5rem;
-        margin-bottom: 1rem;
-    }
-
-    .horizontal-line {
-        width: 99%;
-    }
-
     .two-column-layout {
         flex-direction: row;
         justify-content: space-between;
@@ -301,9 +299,9 @@ body {
         width: 48%;
     }
 
-    step-body-text {
-        font-size: 1.4rem;  /* Increased from 1.1rem */
+    .step-body-text {
+        font-size: 1.4rem;
         padding: 0;
-        line-height: 1.5;  
+        line-height: 1.5;
     }
 }
