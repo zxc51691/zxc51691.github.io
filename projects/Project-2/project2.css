@@ -259,6 +259,7 @@ body {
     height: auto;
     display: block;
     margin: 1 auto;
+    border-radius: 10px;
 }
 
 .full-width-image {
