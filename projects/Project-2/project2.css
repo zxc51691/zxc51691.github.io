@@ -56,6 +56,15 @@ body {
     background-color: #0E4463;
 }
 
+/* New hover styles */
+.nav-button:hover,
+.begin-button:hover,
+.dropbtn:hover {
+    color: #D61A47;
+    transition: color 0.3s ease;
+    background-color: #0E4463; /* Keeping the original background color */
+}
+
 .home-logo {
     padding: 0;
     display: flex;
@@ -258,7 +267,7 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    margin: 1 auto;
+    margin: 1rem auto;
     border-radius: 10px;
 }
 
