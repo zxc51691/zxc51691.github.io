@@ -64,6 +64,22 @@ body {
     white-space: nowrap;
 }
 
+.step-navigation {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-button {
+    background-color: #0E4463;
+    color: white;
+    text-decoration: none;
+    padding: 0.4rem 0.6rem;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
 .dropdown {
     order: 3;
     position: static;
@@ -161,7 +177,7 @@ body {
 .home-header .subtitle {
     color: #000000;
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .step-title {
@@ -169,61 +185,47 @@ body {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
 
-.step-subtitle {
-    color: #cc0000;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
+.horizontal-line {
+    height: 2px;
+    background-color: #0E4463;
+    margin: 0 auto;
+    width: 98%;
+}
+
+.two-column-layout {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.instruction-block {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.left-content, .right-content {
+.left-column, .right-column {
     width: 100%;
 }
 
-.instruction-text {
-    margin-bottom: 1rem;
-    line-height: 1.4;
+.step-body-text {
+    font-family: 'Quicksand', sans-serif;
     color: #333;
-    font-size: 0.9rem;
-}
-
-.placeholder-image {
-    background-color: #ddd;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0;
-    font-weight: bold;
-    color: #666;
-}
-
-.intro-box {
-    background-color: #0E4463;
-    color: white;
-    padding: 1rem;
-    border-radius: 10px;
+    font-size: 1.8rem;  /* Increased from 1rem */
+    line-height: 1.6;
+    text-align: left;
+    padding: 0 1rem;
     margin-bottom: 1rem;
-    line-height: 1.4;
-    font-size: 0.9rem;
 }
 
-#homeimage {
-    max-width: 100%;
+.step-image {
+    width: 99%;
     height: auto;
-    margin: 1rem 0;
-    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.dropdown-content a.current {
+    background-color: #0E4463;
 }
 
 /* Desktop styles */
@@ -237,7 +239,7 @@ body {
         padding: 0.8rem;
     }
  
-    .nav-item, .begin-button, .dropbtn {
+    .nav-item, .begin-button, .dropbtn, .nav-button {
         font-size: 1.3rem;
         padding: 0.6rem 1rem;
     }
@@ -281,48 +283,27 @@ body {
 
     .step-title {
         font-size: 3rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
     }
 
-    .step-subtitle {
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
+    .horizontal-line {
+        width: 99%;
     }
 
-    .instruction-block {
+    .two-column-layout {
         flex-direction: row;
         justify-content: space-between;
+        align-items: flex-start;
     }
 
-    .left-content, .right-content {
-        width: 47%;
+    .left-column, .right-column {
+        width: 48%;
     }
 
-    .vertical-line {
-        display: block;
-        width: 2px;
-        background-color: black;
-        margin: 0 2%;
-    }
-
-    .instruction-text {
-        margin-bottom: 2rem;
-        line-height: 1.6;
-        font-size: 1rem;
-    }
-
-    .placeholder-image {
-        height: 200px;
-        margin: 2rem 0;
-    }
-
-    .intro-box {
-        padding: 1.5rem;
-        margin-bottom: 2rem;
-        line-height: 1.6;
-        font-size: 1rem;
-    }
-
-    #homeimage {
-        margin: 2rem 0;
+    step-body-text {
+        font-size: 1.4rem;  /* Increased from 1.1rem */
+        padding: 0;
+        line-height: 1.5;  
     }
 }
