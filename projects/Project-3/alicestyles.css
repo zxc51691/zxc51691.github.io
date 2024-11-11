@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5DC;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #FFD166;
+    padding: 0.75rem;
+    margin: 0;
+    position: relative;
+}
+
+nav::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #D72638;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo-space {
+    width: 40px;
+    height: 40px;
+    /* Placeholder styling - remove when adding actual logo */
+    background-color: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2.5rem;
+    margin-left: auto;
+    align-items: center;
+}
+
+nav li {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+    line-height: 1.2;
+    font-family: 'Indie Flower', cursive;
+}
+
+nav a:hover {
+    color: #D72638;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 320px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #D72638;
+        flex-direction: column;
+        gap: 0;
+        margin: 0;
+        padding: 1rem 0;
+        z-index: 1000;
+    }
+
+    nav.open ul {
+        display: flex;
+    }
+
+    nav li {
+        height: auto;
+        width: 100%;
+        padding: 0.75rem 0;
+    }
+
+    nav a {
+        color: white;
+        width: 100%;
+    }
+
+    nav a:hover {
+        color: #FFD166;
+    }
+
+    .hamburger.open span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .hamburger.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+}

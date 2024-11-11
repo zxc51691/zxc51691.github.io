@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alice in Wonderland - Home</title>
+    <link rel="stylesheet" href="alicestyles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="alicehome.html">
+                <div class="logo-space"></div>
+            </a>
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="adaptations.html">Adaptations</a></li>
+                <li><a href="themes.html">Themes &<br>Symbolism</a></li>
+                <li><a href="explore.html">Explore<br>Wonderland</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+    </main>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            const hamburger = document.querySelector('.hamburger');
+            nav.classList.toggle('open');
+            hamburger.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
