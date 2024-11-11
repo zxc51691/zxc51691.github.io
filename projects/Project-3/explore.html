@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alice in Wonderland - Explore Wonderland</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@700&family=Inria+Serif:wght@400;700&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="alicestyles.css">
+    <style>
+        .explore-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .explore-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+            max-width: 500px;
+        }
+
+        .explore-title {
+            font-family: 'Hanuman', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .book-cover {
+            width: 400px;
+            height: 600px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .book-cover img {
+            width: 100%;
+            height: 100%;
+            max-height: 600px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .summary-heading {
+            font-family: 'Inria Serif', serif;
+            font-weight: 700;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #2874BE;
+        }
+
+        .summary-text {
+            font-family: 'Inria Serif', serif;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .explore-button {
+            display: inline-block;
+            background-color: #2E86DE;
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            font-family: 'Indie Flower', cursive;
+            letter-spacing: 0.5px;
+            margin-bottom: 3rem;
+        }
+
+        .explore-button:hover {
+            background-color: #2874BE;
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .explore-section {
+                grid-template-columns: 1fr;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .explore-content {
+                text-align: center;
+                align-items: center;
+                max-width: 100%;
+                order: 2;
+            }
+
+            .book-cover {
+                width: 300px;
+                height: 450px;
+                margin-bottom: 2rem;
+                order: 1;
+            }
+
+            .explore-title {
+                font-size: 2rem;
+            }
+
+            .summary-text {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo-container">
+                <a href="alicehome.html">
+                    <div class="logo-space">
+                        <img src="images/rabbit.png" alt="White Rabbit">
+                    </div>
+                </a>
+                <h1 class="site-title">Alice in Wonderland</h1>
+            </div>
+            <ul>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="adaptations.html">Adaptations</a></li>
+                <li><a href="themes.html">Themes &<br>Symbolism</a></li>
+                <li><a href="explore.html" class="current">Explore<br>Wonderland</a></li>
+            </ul>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="adaptations.html">Adaptations</a></li>
+            <li><a href="themes.html">Themes & Symbolism</a></li>
+            <li><a href="explore.html">Explore Wonderland</a></li>
+        </ul>
+    </div>
+    <main>
+        <div class="explore-section">
+            <div class="explore-content">
+                <h2 class="explore-title">Synopsis</h2>
+                <div class="summary-container">
+                    <p class="summary-text">In "Alice in Wonderland," young Alice follows a white rabbit down a rabbit hole and finds herself in a peculiar and enchanting world called Wonderland. Throughout her journey, she encounters a series of eccentric and whimsical characters, such as the Cheshire Cat, the Mad Hatter, and the Queen of Hearts. Alice navigates through a topsy-turvy realm where logic is often turned upside down, and nothing is as it seems. As she tries to make sense of this extraordinary world and find her way back home, Alice embarks on a delightful and sometimes bewildering adventure, filled with curious encounters and thought-provoking riddles. Along the way, she learns valuable lessons about identity, imagination, and the power of embracing curiosity.</p>
+                    <a href="https://a.co/d/7XEgXQe" target="_blank" class="explore-button">Explore This Book</a>
+                </div>
+            </div>
+            <div class="book-cover">
+                <img src="images/bookcover.jpg" alt="Alice in Wonderland Book Cover">
+            </div>
+        </div>
+    </main>
+    <script src="alicejs.js"></script>
+</body>
+</html>

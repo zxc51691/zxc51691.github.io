@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-
 body {
     margin: 0;
     padding: 0;
@@ -12,6 +10,7 @@ nav {
     padding: 0.75rem;
     margin: 0;
     position: relative;
+    z-index: 1000;
 }
 
 nav::after {
@@ -33,12 +32,29 @@ nav::after {
     padding: 0 1rem;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.site-title {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
 .logo-space {
-    width: 40px;
-    height: 40px;
-    /* Placeholder styling - remove when adding actual logo */
-    background-color: rgba(0,0,0,0.1);
-    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    display: block;
+}
+
+.logo-space img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .hamburger {
@@ -47,6 +63,7 @@ nav::after {
     border: none;
     background: none;
     padding: 0;
+    z-index: 1001;
 }
 
 .hamburger span {
@@ -54,7 +71,7 @@ nav::after {
     width: 25px;
     height: 3px;
     margin: 5px 0;
-    background: black;
+    background: #D72638;
     transition: transform 0.3s ease;
 }
 
@@ -78,7 +95,7 @@ nav a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     text-align: center;
@@ -90,16 +107,14 @@ nav a:hover {
     color: #D72638;
 }
 
-main {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+.current {
+    color: #D72638;
 }
 
 .mobile-menu {
     display: none;
     position: fixed;
-    top: calc(57px + 4px); /* Height of nav + red line */
+    top: calc(57px + 4px);
     left: 0;
     width: 100%;
     height: calc(100vh - 57px - 4px);
@@ -108,13 +123,23 @@ main {
     box-sizing: border-box;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
+    z-index: 999;
 }
 
 .mobile-menu.active {
     transform: translateX(0);
 }
 
+main {
+    position: relative;
+    z-index: 1;
+}
+
 @media (max-width: 768px) {
+    .site-title {
+        font-size: 1.2rem;
+    }
+
     nav ul {
         display: none;
     }

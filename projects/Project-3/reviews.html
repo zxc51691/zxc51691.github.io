@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alice in Wonderland - Reviews</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@700&family=Inria+Serif:wght@400;700&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="alicestyles.css">
+    <style>
+        .reviews-section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .reviews-header {
+            font-family: 'Hanuman', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .reviews-intro {
+            font-family: 'Inria Serif', serif;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+            max-width: 800px;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .review-card {
+            padding: 2rem;
+            background-color: #FFD166;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-stars {
+            color: #D72638;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .review-source {
+            font-family: 'Inria Serif', serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .review-text {
+            font-family: 'Inria Serif', serif;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 968px) {
+            .reviews-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .reviews-header {
+                font-size: 2rem;
+            }
+            
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo-container">
+                <a href="alicehome.html">
+                    <div class="logo-space">
+                        <img src="images/rabbit.png" alt="White Rabbit">
+                    </div>
+                </a>
+                <h1 class="site-title">Alice in Wonderland</h1>
+            </div>
+            <ul>
+                <li><a href="reviews.html" class="current">Reviews</a></li>
+                <li><a href="adaptations.html">Adaptations</a></li>
+                <li><a href="themes.html">Themes &<br>Symbolism</a></li>
+                <li><a href="explore.html">Explore<br>Wonderland</a></li>
+            </ul>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="adaptations.html">Adaptations</a></li>
+            <li><a href="themes.html">Themes & Symbolism</a></li>
+            <li><a href="explore.html">Explore Wonderland</a></li>
+        </ul>
+    </div>
+    <main>
+        <div class="reviews-section">
+            <h2 class="reviews-header">Book Reviews</h2>
+            <p class="reviews-intro">Discover what readers and critics have said about the timeless tale of Alice in Wonderland. From its original publication to today, this book has enchanted audiences of all ages with its whimsical charm and profound curiosity.</p>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-source">Literary Review Monthly</div>
+                    <div class="review-text">"A masterful journey into the world of imagination. Wonderland is filled with characters and adventures that make you question reality in the most delightful way."</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">★★★★☆</div>
+                    <div class="review-source">Classic Reads Digest</div>
+                    <div class="review-text">"Lewis Carroll's wit and clever wordplay bring this enchanting world to life. Perfect for those who love fantasy, humor, and a touch of the absurd."</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-source">Reader's Haven</div>
+                    <div class="review-text">"An extraordinary, surreal escape that captures the essence of childhood wonder. Alice's journey feels as fresh today as it did over a century ago."</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="alicejs.js"></script>
+</body>
+</html>
