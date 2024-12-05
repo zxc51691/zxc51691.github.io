@@ -470,6 +470,7 @@ img {
 
 .timeline-content {
     padding: 0;
+    text-align: left;
 }
 
 .timeline-entry {
@@ -625,7 +626,7 @@ img {
     }
     
     .timeline-image {
-        width: 40px; /* Smaller width for mobile */
+        width: 36px; /* Smaller width for mobile */
     
     }
 
