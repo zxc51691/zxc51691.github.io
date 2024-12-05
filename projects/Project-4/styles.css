@@ -651,6 +651,11 @@ img {
         padding: 0.4rem 0.2rem;
     }
 
+    .timeline-container {
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+    
     .timeline-image {
         width: 40px; /* Smaller width for mobile */
     
