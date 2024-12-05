@@ -650,6 +650,11 @@ img {
         font-size: 0.75rem; /* Even smaller font for very small screens */
         padding: 0.4rem 0.2rem;
     }
+
+    .timeline-image {
+        width: 40px; /* Smaller width for mobile */
+    
+    }
 }
 
 /* Print styles */
