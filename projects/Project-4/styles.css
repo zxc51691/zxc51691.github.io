@@ -460,7 +460,7 @@ img {
 }
 
 .timeline-image {
-    width: 40px; /* Reduced width to scale image down */
+    width: 36px; /* Reduced width to scale image down */
     height: auto;
     align-self: start; /* Changed from stretch to start to prevent stretching */
     object-fit: contain;
@@ -482,7 +482,7 @@ img {
 
 .timeline-entry h3 {
     font-family: var(--font-headers);
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--color-secondary);
     margin-bottom: 0.5rem;
 }
