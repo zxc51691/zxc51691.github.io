@@ -482,7 +482,7 @@ img {
 
 .timeline-entry h3 {
     font-family: var(--font-headers);
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--color-secondary);
     margin-bottom: 0.5rem;
 }
@@ -490,7 +490,7 @@ img {
 .timeline-entry p {
     font-family: var(--font-body);
     color: var(--color-text);
-    font-size: .8rem;
+    font-size: .9rem;
     margin: 0;
 }
 
