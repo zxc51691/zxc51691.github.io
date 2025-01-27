@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        button {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World Exercise</h1>
+    <p id="message">Click the button below!</p>
+    <button id="changeText">Click Me</button>
+
+    <script>
+        document.getElementById('changeText').addEventListener('click', function() {
+            document.getElementById('message').textContent = 'Hello, World!';
+        });
+    </script>
+</body>
+</html>
