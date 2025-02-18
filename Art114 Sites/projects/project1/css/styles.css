@@ -1,0 +1,42 @@
+.logo {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #1a365d;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-nav-active {
+        transform: translateX(0);
+    }
+}
+
+
+/* Header specific styles */
+.header-icon {
+    color: #FF3B30;
+    transition: color 0.2s ease;
+}
+
+.header-icon:hover {
+    color: #FF594F;
+}
+
+.header-logo {
+    color: #0041C2;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.vertical-divider {
+    width: 1px;
+    height: 24px;
+    background-color: #E5E7EB;
+    margin: 0 12px;
+}

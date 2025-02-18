@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Form</title>
+</head>
+<body>
+    <form action="process.php" method="POST" onsubmit="return validateForm()">
+        <div>
+            <label>Name:</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+            <label>Age:</label>
+            <input type="number" name="age" id="age" required>
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var age = document.getElementById('age').value;
+            var email = document.getElementById('email').value;
+
+            // Check if all fields are filled
+            if (!name || !age || !email) {
+                alert('All fields must be filled out!');
+                return false;
+            }
+
+            // Check if age is positive
+            if (age <= 0) {
+                alert('Age must be positive!');
+                return false;
+            }
+
+            // Validate email format
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address!');
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
