@@ -6,14 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
     if (registerForm) {
         registerForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            window.location.href = 'feed.php';
+            window.location.href = 'feed.html';
         });
     }
 
     if (loginForm) {
         loginForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            window.location.href = 'feed.php';
+            window.location.href = 'feed.html';
         });
     }
     
