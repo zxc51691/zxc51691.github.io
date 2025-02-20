@@ -3,13 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Skill Spot - Feed</title>
+        <title>Skill Spot - Share Your Skills</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="css/styles.css">
         <script src="js/main.js"></script>
     </head>
+    <body class="bg-gray-100">
 <body>
+    <!-- Main Header -->
 <header class="bg-white border-b">
     <div class="container mx-auto px-4">
         <div class="flex items-center justify-between h-16">
@@ -65,7 +67,7 @@
                     <ul class="space-y-2">
                         <li><a href="featured.html" class="text-gray-600 hover:text-blue-700">Featured</a></li>
                         <li><a href="categories.html" class="text-gray-600 hover:text-blue-700">Categories</a></li>
-                        <li><a href="skillgroups.html" class="text-gray-600 hover:text-blue-700">Skill Groups</a></li>
+                        <li><a href="skillgroups.html" class="text-red-500 hover:text-red-600">Skill Groups</a></li>
                         <li><a href="trending.html" class="text-gray-600 hover:text-blue-700">Trending</a></li>
                     </ul>
                 </div>
@@ -84,92 +86,107 @@
 
     <!-- Main Content -->
     <div class="flex-1 p-4 lg:p-8">
-        <!-- Post -->
-        <div class="bg-white rounded-lg shadow-lg mb-8 max-w-2xl mx-auto">
-            <div class="p-4">
-                <div class="flex items-center justify-between mb-4">
-                    <div class="flex items-center space-x-2">
-                        <img src="images/ProfIcon-01.png" alt="Profile" class="w-10 h-10 rounded-full object-cover">
-                        <div>
-                            <div class="font-medium">Alex Thompson</div>
-                            <div class="text-sm text-gray-500">Just landed this new trick! 🛹</div>
-                        </div>
-                    </div>
-                    <button class="text-gray-400 hover:text-gray-600">•••</button>
-                </div>
-                
-                <img src="images/skatebowl.jpg" alt="Skateboarding trick" class="rounded-lg w-full">
-                
-                <div class="mt-4 flex items-center space-x-4">
-                    <button class="text-red-500 hover:text-red-600">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                        </svg>
-                    </button>
-                    <a href="comments.html" class="text-gray-500 hover:text-gray-600">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                    </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <!-- Skill Groups Title -->
+        <h2 class="text-2xl lg:text-3xl font-medium mb-6 text-center">Skill Groups</h2>
 
-        <div class="bg-white rounded-lg shadow-lg mb-8 max-w-2xl mx-auto">
-            <div class="p-4">
-                <div class="flex items-center justify-between mb-4">
-                    <div class="flex items-center space-x-2">
-                        <img src="images/ProfIcon-01.png" alt="Profile" class="w-10 h-10 rounded-full object-cover">
-                        <div>
-                            <div class="font-medium">Louis Devin</div>
-                            <div class="text-sm text-gray-500">New treat for the day!</div>
-                        </div>
+        <!-- Groups Grid -->
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Group Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="w-full h-48 bg-gray-200"></div>
+                    <div class="p-4">
+                        <h3 class="text-red-500 font-medium mb-1">Group Name</h3>
+                        <p class="text-gray-600 text-sm mb-1">Description</p>
+                        <p class="text-gray-500 text-sm mb-3">Member Count</p>
+                        <button class="w-full bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition-colors">
+                            Join Group
+                        </button>
                     </div>
-                    <button class="text-gray-400 hover:text-gray-600">•••</button>
                 </div>
-                
-                <img src="images/breadroll.jpg" alt="Bread" class="rounded-lg w-full">
-                
-                <div class="mt-4 flex items-center space-x-4">
-                    <button class="text-red-500 hover:text-red-600">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                        </svg>
-                    </button>
-                    <a href="comments.html" class="text-gray-500 hover:text-gray-600">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                    </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="bg-white rounded-lg shadow-lg mb-8 max-w-2xl mx-auto">
-            <div class="p-4">
-                <div class="flex items-center justify-between mb-4">
-                    <div class="flex items-center space-x-2">
-                        <img src="images/ProfIcon-01.png" alt="Profile" class="w-10 h-10 rounded-full object-cover">
-                        <div>
-                            <div class="font-medium">Gary Evans</div>
-                            <div class="text-sm text-gray-500">Homerun!</div>
-                        </div>
+                <!-- Group Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="w-full h-48 bg-gray-200"></div>
+                    <div class="p-4">
+                        <h3 class="text-red-500 font-medium mb-1">Group Name</h3>
+                        <p class="text-gray-600 text-sm mb-1">Description</p>
+                        <p class="text-gray-500 text-sm mb-3">Member Count</p>
+                        <button class="w-full bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition-colors">
+                            Join Group
+                        </button>
                     </div>
-                    <button class="text-gray-400 hover:text-gray-600">•••</button>
                 </div>
-                
-                <img src="images/baseballswing.jpg" alt="Skateboarding trick" class="rounded-lg w-full">
-                
-                <div class="mt-4 flex items-center space-x-4">
-                    <button class="text-red-500 hover:text-red-600">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                        </svg>
-                    </button>
-                    <a href="comments.html" class="text-gray-500 hover:text-gray-600">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                    </svg>
-                    </a>
+                <!-- Group Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="w-full h-48 bg-gray-200"></div>
+                    <div class="p-4">
+                        <h3 class="text-red-500 font-medium mb-1">Group Name</h3>
+                        <p class="text-gray-600 text-sm mb-1">Description</p>
+                        <p class="text-gray-500 text-sm mb-3">Member Count</p>
+                        <button class="w-full bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition-colors">
+                            Join Group
+                        </button>
+                    </div>
+                </div>
+                <!-- Group Card 4 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="w-full h-48 bg-gray-200"></div>
+                    <div class="p-4">
+                        <h3 class="text-red-500 font-medium mb-1">Group Name</h3>
+                        <p class="text-gray-600 text-sm mb-1">Description</p>
+                        <p class="text-gray-500 text-sm mb-3">Member Count</p>
+                        <button class="w-full bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition-colors">
+                            Join Group
+                        </button>
+                    </div>
+                </div>
+                <!-- Group Card 5 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="w-full h-48 bg-gray-200"></div>
+                    <div class="p-4">
+                        <h3 class="text-red-500 font-medium mb-1">Group Name</h3>
+                        <p class="text-gray-600 text-sm mb-1">Description</p>
+                        <p class="text-gray-500 text-sm mb-3">Member Count</p>
+                        <button class="w-full bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition-colors">
+                            Join Group
+                        </button>
+                    </div>
+                </div>
+                <!-- Group Card 6 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="w-full h-48 bg-gray-200"></div>
+                    <div class="p-4">
+                        <h3 class="text-red-500 font-medium mb-1">Group Name</h3>
+                        <p class="text-gray-600 text-sm mb-1">Description</p>
+                        <p class="text-gray-500 text-sm mb-3">Member Count</p>
+                        <button class="w-full bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition-colors">
+                            Join Group
+                        </button>
+                    </div>
+                </div>
+                <!-- Group Card 7 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="w-full h-48 bg-gray-200"></div>
+                    <div class="p-4">
+                        <h3 class="text-red-500 font-medium mb-1">Group Name</h3>
+                        <p class="text-gray-600 text-sm mb-1">Description</p>
+                        <p class="text-gray-500 text-sm mb-3">Member Count</p>
+                        <button class="w-full bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition-colors">
+                            Join Group
+                        </button>
+                    </div>
+                </div>
+                <!-- Group Card 8 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="w-full h-48 bg-gray-200"></div>
+                    <div class="p-4">
+                        <h3 class="text-red-500 font-medium mb-1">Group Name</h3>
+                        <p class="text-gray-600 text-sm mb-1">Description</p>
+                        <p class="text-gray-500 text-sm mb-3">Member Count</p>
+                        <button class="w-full bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition-colors">
+                            Join Group
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -231,4 +248,5 @@
     </div>
 </footer>
 </body>
+    </body>
 </html>

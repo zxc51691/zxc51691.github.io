@@ -10,7 +10,7 @@
         <script src="js/main.js"></script>
     </head>
 <body>
-<header class="bg-white border-b">
+    <header class="bg-white border-b">
     <div class="container mx-auto px-4">
         <div class="flex items-center justify-between h-16">
             <!-- Left side -->
@@ -54,9 +54,9 @@
     </div>
 </header>
 
-<div class="flex flex-col lg:flex-row min-h-screen bg-gray-100">
-    <!-- Left Sidebar - Hidden on mobile -->
-    <div class="hidden lg:block w-64 bg-white shadow-lg">
+<div class="flex min-h-screen bg-gray-100">
+    <!-- Left Sidebar -->
+    <div class="w-64 bg-white shadow-lg">
         <div class="p-4">
             <!-- Navigation -->
             <nav class="space-y-6">
@@ -64,7 +64,7 @@
                     <h3 class="text-lg font-medium mb-2">Discover</h3>
                     <ul class="space-y-2">
                         <li><a href="featured.html" class="text-gray-600 hover:text-blue-700">Featured</a></li>
-                        <li><a href="categories.html" class="text-gray-600 hover:text-blue-700">Categories</a></li>
+                        <li><a href="categories.html" class="text-red-500 hover:text-red-600">Categories</a></li>
                         <li><a href="skillgroups.html" class="text-gray-600 hover:text-blue-700">Skill Groups</a></li>
                         <li><a href="trending.html" class="text-gray-600 hover:text-blue-700">Trending</a></li>
                     </ul>
@@ -83,103 +83,72 @@
     </div>
 
     <!-- Main Content -->
-    <div class="flex-1 p-4 lg:p-8">
-        <!-- Post -->
-        <div class="bg-white rounded-lg shadow-lg mb-8 max-w-2xl mx-auto">
-            <div class="p-4">
-                <div class="flex items-center justify-between mb-4">
-                    <div class="flex items-center space-x-2">
-                        <img src="images/ProfIcon-01.png" alt="Profile" class="w-10 h-10 rounded-full object-cover">
-                        <div>
-                            <div class="font-medium">Alex Thompson</div>
-                            <div class="text-sm text-gray-500">Just landed this new trick! 🛹</div>
-                        </div>
-                    </div>
-                    <button class="text-gray-400 hover:text-gray-600">•••</button>
-                </div>
-                
-                <img src="images/skatebowl.jpg" alt="Skateboarding trick" class="rounded-lg w-full">
-                
-                <div class="mt-4 flex items-center space-x-4">
-                    <button class="text-red-500 hover:text-red-600">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                        </svg>
-                    </button>
-                    <a href="comments.html" class="text-gray-500 hover:text-gray-600">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                    </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <div class="flex-1 p-8">
+        <!-- Categories Title -->
+        <h2 class="text-3xl font-medium mb-8 text-center">Categories</h2>
 
-        <div class="bg-white rounded-lg shadow-lg mb-8 max-w-2xl mx-auto">
-            <div class="p-4">
-                <div class="flex items-center justify-between mb-4">
-                    <div class="flex items-center space-x-2">
-                        <img src="images/ProfIcon-01.png" alt="Profile" class="w-10 h-10 rounded-full object-cover">
-                        <div>
-                            <div class="font-medium">Louis Devin</div>
-                            <div class="text-sm text-gray-500">New treat for the day!</div>
-                        </div>
-                    </div>
-                    <button class="text-gray-400 hover:text-gray-600">•••</button>
-                </div>
-                
-                <img src="images/breadroll.jpg" alt="Bread" class="rounded-lg w-full">
-                
-                <div class="mt-4 flex items-center space-x-4">
-                    <button class="text-red-500 hover:text-red-600">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                        </svg>
-                    </button>
-                    <a href="comments.html" class="text-gray-500 hover:text-gray-600">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                    </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="bg-white rounded-lg shadow-lg mb-8 max-w-2xl mx-auto">
-            <div class="p-4">
-                <div class="flex items-center justify-between mb-4">
-                    <div class="flex items-center space-x-2">
-                        <img src="images/ProfIcon-01.png" alt="Profile" class="w-10 h-10 rounded-full object-cover">
-                        <div>
-                            <div class="font-medium">Gary Evans</div>
-                            <div class="text-sm text-gray-500">Homerun!</div>
-                        </div>
-                    </div>
-                    <button class="text-gray-400 hover:text-gray-600">•••</button>
-                </div>
-                
-                <img src="images/baseballswing.jpg" alt="Skateboarding trick" class="rounded-lg w-full">
-                
-                <div class="mt-4 flex items-center space-x-4">
-                    <button class="text-red-500 hover:text-red-600">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                        </svg>
-                    </button>
-                    <a href="comments.html" class="text-gray-500 hover:text-gray-600">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                    </svg>
-                    </a>
-                </div>
+        <!-- Categories Grid -->
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
+            <div class="grid grid-cols-5 gap-4 text-center">
+                <!-- Row 1 -->
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Cooking/<br>Baking</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Film/<br>Video</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Photography</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Bicycling</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Motorcycling</a>
+
+                <!-- Row 2 -->
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Offroad<br>Vehicles</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Rollerblading</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Skateboarding</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Boating</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Fishing</a>
+
+                <!-- Row 3 -->
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Skiing/<br>Snowboarding</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Hang-gliding</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Sky-diving</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Ice-skating</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Hockey/<br>Ice Hockey</a>
+
+                <!-- Row 4 -->
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">American<br>Football</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Soccer</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Baseball/<br>Softball</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Basketball</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Tennis/<br>Volleyball</a>
+
+                <!-- Row 5 -->
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Golf</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Swimming</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Music<br>Producing</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Authors/<br>Illustrators</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">TV/<br>Entertainment</a>
+
+                <!-- Row 6 -->
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Painting</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Drawing</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Sculpting</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Digital<br>Art</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Animation</a>
+
+                <!-- Row 7 -->
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Horses</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Tech</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Gaming</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Cosmetology</a>
+                <a href="#" class="text-red-500 hover:text-red-600 font-bold">Stem</a>
+
             </div>
         </div>
     </div>
 
-    <!-- Right Sidebar - Messages - Hidden on mobile -->
-    <div class="hidden lg:block w-64 bg-white shadow-lg p-4">
+    <!-- Right Sidebar - Messages -->
+    <div class="w-64 bg-white shadow-lg p-4">
         <h3 class="font-medium mb-4">Messages</h3>
         <div class="space-y-4">
-        <div class="flex items-center space-x-2">
+            <!-- Message items -->
+            <div class="flex items-center space-x-2">
                 <img src="images/ProfIcon-01.png" alt="Profile" class="w-10 h-10 rounded-full object-cover">
                 <div>
                     <div class="font-medium">Jeffery Schmooley</div>
