@@ -11,9 +11,9 @@
 <body>
     <nav class="main-nav">
         <div class="nav-container">
-            <a href="index.html" class="logo"><img src="quantumcore-logo.svg" alt="QuantumCore"></a>
+            <a href="/index.html" class="logo"><img src="/images/quantumcore-logo.png" alt="QuantumCore">Quantum Core</a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="schedule.html">Schedule</a></li>
                 <li class="dropdown">
                     <a href="">Speakers</a>
@@ -49,29 +49,21 @@
     </nav>
     
     <main class="page">
-        <h2>Registration Form</h2>
+        <h2>Hands-On Labs</h2>
 
-        <form class="registration-form">
-            <div class="form-group">
-                <label>Full Name</label>
-                <input type="text" required>
-            </div>
+        <div class="schedule-grid">
+            <article class="session-card">
+                <img src="/images/lab-quantum.jpg" alt="Quantum Lab" class="responsive-img">
+                <h3>Quantum Processor Programming</h3>
+                <p>Get hands-on with our QX-2000 development boards</p>
+            </article>
 
-            <div class="form-group">
-                <label>Email</label>
-                <input type="email" required>
-            </div>
-
-            <div class="form-group">
-                <label>Ticket Type</label>
-                <select>
-                    <option>Developer Pass</option>
-                    <option>Executive Pass</option>
-                </select>
-            </div>
-
-            <button type="submit" class="cta-button">Complete Registration</button>
-        </form>
+            <article class="session-card">
+                <img src="/images/lab-neuro.jpg" alt="Neuro Lab" class="responsive-img">
+                <h3>Neuromorphic Systems Lab</h3>
+                <p>Program spiking neural networks in hardware</p>
+            </article>
+        </div>
     </main>
 
     <script src="script.js"></script>

@@ -11,9 +11,9 @@
 <body>
     <nav class="main-nav">
         <div class="nav-container">
-            <a href="index.html" class="logo"><img src="quantumcore-logo.svg" alt="QuantumCore"></a>
+            <a href="/index.html" class="logo"><img src="/images/quantumcore-logo.png" alt="QuantumCore">Quantum Core</a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="schedule.html">Schedule</a></li>
                 <li class="dropdown">
                     <a href="">Speakers</a>
@@ -49,20 +49,29 @@
     </nav>
     
     <main class="page">
-        <h2>Conference History</h2>
+        <h2>Registration Form</h2>
 
-        <div class="timeline">
-            <article class="timeline-event">
-                <h3>2023: Quantum Breakthrough</h3>
-                <p>First demonstration of 1000-qubit photonic processor</p>
-                <img src="images/corecon-history.jpg" alt="2023 Event" class="responsive-img">
-            </article>
+        <form class="registration-form">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" required>
+            </div>
 
-            <article class="timeline-event">
-                <h3>2021: Neuromorphic Revolution</h3>
-                <p>Launched industry-first neuromorphic development kit</p>
-            </article>
-        </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Ticket Type</label>
+                <select>
+                    <option>Developer Pass</option>
+                    <option>Executive Pass</option>
+                </select>
+            </div>
+
+            <button type="submit" class="cta-button">Complete Registration</button>
+        </form>
     </main>
 
     <script src="script.js"></script>
