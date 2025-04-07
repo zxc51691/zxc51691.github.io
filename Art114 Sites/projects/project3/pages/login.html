@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REACTpost - Login</title>
+    <link rel="stylesheet" href="..//style.css">
+    <style>
+        .auth-container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .auth-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff3b3b;
+        }
+        
+        .auth-form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        
+        .auth-btn {
+            padding: 12px;
+            background-color: #ff3b3b;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        .auth-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .auth-links a {
+            color: #ff3b3b;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="..//images/RPlogo.png" alt="REACTpost Logo" class="logo">
+        </div>
+        <h1>REACTpost</h1>
+        <div class="auth-links">
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="..//index.html">HOME</a></li>
+            <li><a href="blogs.html">BLOGS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="help.html">HELP</a></li>
+        </ul>
+    </nav>
+    
+    <div class="auth-container">
+        <h2>Login to Your Account</h2>
+        <form id="login-form" class="auth-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit" class="auth-btn">Login</button>
+        </form>
+        <div class="auth-links">
+            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+            <p><a href="#">Forgot Password?</a></p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 REACTpost. All rights reserved.</p>
+    </footer>
+    
+    <script src="..//script.js"></script>
+</body>
+</html>

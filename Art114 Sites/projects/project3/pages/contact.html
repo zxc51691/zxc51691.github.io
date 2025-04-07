@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REACTpost - Contact Us</title>
+    <link rel="stylesheet" href="..//style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="..//images/RPlogo.png" alt="REACTpost Logo" class="logo">
+        </div>
+        <h1>REACTpost</h1>
+        <div class="auth-links">
+            <a href="login.html">Login/Logout</a>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="..//index.html">HOME</a></li>
+            <li><a href="blogs.html">BLOGS</a></li>
+            <li><a href="contact.html" class="active">CONTACT</a></li>
+            <li><a href="help.html">HELP</a></li>
+        </ul>
+    </nav>
+    
+    <div class="profile-section">
+        <div class="profile-info">
+            <div class="profile-pic"></div>
+            <h3>Profile Name</h3>
+        </div>
+        <div class="post-input">
+            <input type="text" placeholder="Type Post">
+        </div>
+        <div class="post-btn">
+            <div class="post-btn-pencil"></div>
+        </div>
+    </div>
+    
+    <div class="featured-section">
+        <h2>Contact Us</h2>
+        <div class="contact-form-container">
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 REACTpost. All rights reserved.</p>
+    </footer>
+    
+    <script src="..//script.js"></script>
+</body>
+</html>
