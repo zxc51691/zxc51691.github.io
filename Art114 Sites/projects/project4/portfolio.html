@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer Portfolio | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Zach Cole</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h1>Portfolio</h1>
+                <p>A collection of my work</p>
+            </div>
+            
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-title="Project 1" data-desc="Project Description">
+                    <img src="/api/placeholder/600/600" alt="Project 1">
+                </div>
+                <div class="portfolio-item" data-title="Project 2" data-desc="Project Description">
+                    <img src="/api/placeholder/600/600" alt="Project 2">
+                </div>
+                <div class="portfolio-item" data-title="Project 3" data-desc="Project Description">
+                    <img src="/api/placeholder/600/600" alt="Project 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Lightbox -->
+    <div class="portfolio-lightbox">
+        <div class="lightbox-content">
+            <span class="close-btn">&times;</span>
+            <img src="" alt="Project Image" id="lightbox-img">
+            <div class="lightbox-details">
+                <h2 id="lightbox-title"></h2>
+                <p id="lightbox-desc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>&copy; 2025 Zach Cole</p>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:zachcole0217@gmail.com">zachcole0217@gmail.com</a>
+                    <a href="tel:+17176011257">+1 (717) 601-1257</a>
+                </div>
+                <div class="social-links">
+                    <a href="#">FB</a>
+                    <a href="#">IG</a>
+                    <a href="#">BE</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
